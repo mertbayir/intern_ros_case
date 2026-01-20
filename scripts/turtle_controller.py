@@ -29,12 +29,6 @@ class TurtleController:
         self.sub = rospy.Subscriber('/odom', Odometry, self.odom_callback) # Konum ve yönelim bilgisi almak için Odometry mesajlarını dinliyoruz. Konum bilgisi geldikçe odom_callback fonksiyonu çağrılır.
         
         self.rate = rospy.Rate(10) # 10 Hz döngü hızı veriyoruz.
-        self.ctrl_c = False
-        rospy.on_shutdown(self.shutdownhook) # Düğüm kapanırken çağrılacak fonksiyon.
-
-    def shutdownhook(self): # Burası düğüm kapanırken robotu durdurmak için.
-        self.stop_robot() 
-        self.ctrl_c = True 
 
     def stop_robot(self): # Burada robotun ileri hızı ve dönüş hızını sıfırlıyoruz.
         cmd = Twist()

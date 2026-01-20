@@ -9,16 +9,14 @@
 </launch>
 
 
-
- <!-- 
+<!-- 
  
 Yazdığımız node'u belirli parametrelerle başlatmak için launch dosyası. Launch etiketleri
- arasında node etiketi kullanılarak turtle_controller.py düğümünü başlattık. pkg parametresi ile düğümün bulunduğu paketi,
- type parametresi ile düğümün dosya adını, name parametresi ile düğümün adını ve output parametresi ile çıktı türünü belirttik.
- 
- param etiketleri ile düğümün çalışma sırasında kullanacağı parametreleri tanımladık. Bu çalışma için; lineer hızı,
- lineer hareket süresini ve dönüş açısal hız parametrelerini belirledik. Süre değerinde dokümana bağlı kalarak 5 saniye, diğer verilerde ise örnek
- olarak lineer hızı 0.2 ve açısal hızı(dönmesi için gereken hız parametresi) 0.5 olarak ayarladık.
+arasında 'node' etiketi kullanarak turtle_controller.py düğümünü başlattık. "pkg" parametresi ile düğümün bulunduğu paketi,
+"type" parametresi ile düğümün dosya adını, "name" parametresi ile düğümün adını ve "output" parametresi ile çıktıları terminale yönlendirdik.
+'param' etiketleri ile düğümün çalışma sırasında kullanacağı parametreleri tanımladık. Bu çalışma için; doğrusal hızı,
+doğrusal hareket süresini ve dönüş açısal hız parametrelerini belirledik. Süre değerinde dokümana bağlı kalarak 5 saniye, diğer verilerde ise örnek
+olarak doğrusal hızı 0.2 ve açısal hızı(dönmesi için gereken hız parametresi) 0.5 olarak ayarladık. Ekstra bilgi olarak bu parametreler sadece bu node içerisinden çağrılabilir.
 
- 
- -->
+-->
+
